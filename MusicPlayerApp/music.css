@@ -1,0 +1,104 @@
+.main_div
+{
+    background-color:antiquewhite;
+    height:34rem;
+    width:25rem;
+    border-radius:2rem;
+    display: flex;
+    justify-content: center;
+    padding:2rem;
+    
+}
+.music_container{
+    height:30rem;
+    width:20rem;
+    background-color:black;
+    color:white;
+    border-radius:2rem;
+    padding:1.8rem;
+    font-family:cursive;
+    align-items:center;
+    
+}
+.music_container #title
+{
+    text-transform:uppercase;
+    letter-spacing:0.2rem;
+    word-spacing:0.5rem;
+    margin:1rem 0 0.5rem 0;
+    font-size:1.5rem;
+    font-weight:500;
+    text-shadow:0 0 0.3rem 0.5rem grey;
+}
+.music_container #artist
+{
+    color:#cccaca;
+    text-transform:capitalize;
+    letter-spacing:0.1rem;
+    font-size:1rem;
+     font-weight:300 ;
+}
+.img_container
+{
+    margin:auto;
+}
+img
+{
+    height:20rem;
+    width:20rem;
+    border-radius:50%;
+    object-fit:cover;
+    box-shadow:0 0.3rem 0.3rem 0 white;
+}
+.music_controls
+{
+    width:15rem;
+    display:flex;
+    justify-content:space-between;
+    margin:auto;
+    margin-top:1.5rem;
+    align-items:center;
+}
+.music_controls .fa
+{
+    font-size:1.5rem;
+    cursor:pointer;
+    filter:drop-shadow(0 1.2rem 3rem 0.5rem white);
+    color:white
+}
+.music_controls .main_button
+{
+  width:2rem;
+  height:2rem;
+  border-radius:50%;
+  background-color: white;
+  color:black;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:1rem;
+}
+
+.music_controls .fa:hover{
+    color:grey;
+}
+.music_controls .fa-play:hover{
+    background-color: black;
+    color:white;
+   
+}
+.anime
+{
+    animation:rotatePlayer 3s linear infinite;
+}
+
+@keyframes rotatePlayer
+{
+    from{
+        transform:rotate(0deg);
+    }
+   to {
+       transform:rotate(360deg);
+   }
+}
+
